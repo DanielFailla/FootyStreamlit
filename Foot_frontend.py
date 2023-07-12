@@ -29,8 +29,8 @@ with st.expander("Explination on Downloading CSV"):
     st.text("📱Iphone Instructions: ")
     st.text("Step1. tap the link and scorll down to (Download CSV) and press")
     st.text("Step2. CSV will be placed in File. Select choose File")
-    st.text("Step3. Select (afl-player-stats-2023")
-    st.text("Ensure its the current stats of players")
+    st.text("Step3. Select (afl-player-stats-2023)")
+    st.text("Ensure its the current week stats of the players")
 
 st.write("Click to find updated CSV files [link](https://www.wheeloratings.com/afl_stats.html)")
 uploaded_file = st.file_uploader("Choose a file")
