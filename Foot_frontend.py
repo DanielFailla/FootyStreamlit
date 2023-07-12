@@ -26,7 +26,7 @@ with st.expander("Explination on Downloading CSV"):
     st.text("Step2. scorll down to'Download as CSV' -> Download")
     st.text("Step3. CSV is now located in Files")
     st.text("Step4. Browse files on Streamlit")
-    st.text("Step4. Select downloaded file")
+    st.text("Step4. CHoose file -> newst file in recent")
     st.text("💻Computer Instructions: ")
     st.text("Step1. Click the link and scorll down to (Download CSV)")
     st.text("Step2. Add CSV file to a location in computer easily accessible ")
