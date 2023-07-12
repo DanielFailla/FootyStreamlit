@@ -35,10 +35,15 @@ with st.expander("Explination on Downloading CSV"):
 
 st.write("Click to find updated CSV files [link](https://www.wheeloratings.com/afl_stats.html)")
 uploaded_file = st.file_uploader("Choose a file")
-file_name = uploaded_file.name
-# Read CSV file
-data = pd.read_csv(uploaded_file)
 
+@st.cache_data 
+def read_data(uploaded_file):
+   uploaded_file = st.file_uploader("Choose a file")
+   # Read CSV file
+   data = pd.read_csv(uploaded_file)
+   return data
+
+data = read_data(uploaded_file)
 sorted_data = data.sort_values(by='Team', ascending=True)
 # Display the contents of the DataFrame
 #t.write(sorted_data)
