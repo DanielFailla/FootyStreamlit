@@ -154,9 +154,9 @@ with tab2:
    col5, col6 = st.columns(2)
 
    with col5:
-      st.subheader("15 to < 20 disposals")
+      st.subheader("15 or more disposals")
       Team1_2_desposals_range(Team2_Risk,15,20)
-      st.subheader("20 to < 25 disposals")
+      st.subheader("20 or more disposals")
       Team1_2_desposals_range(Team2_Risk,20,25)
       st.subheader("25 or more disposals")
       Team1_2_desposals_range(Team2_Risk,25,40)
