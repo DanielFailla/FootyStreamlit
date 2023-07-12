@@ -21,9 +21,15 @@ st.divider()
 st.subheader('CSV DROPBOX 📦')
 
 with st.expander("Explination on Downloading CSV"):
+    st.text(💻Computer Instructions: ")
     st.text("Step1. Click the link and scorll down to (Download CSV)")
     st.text("Step2. Add CSV file to a location in computer easily accessible ")
     st.text("Step3. Click browse files and add csv file.")
+    st.text("Ensure its the current stats of players")
+    st.text(📱Iphone Instructions: ")
+    st.text("Step1. tap the link and scorll down to (Download CSV) and press")
+    st.text("Step2. CSV will be placed in File. Select choose File")
+    st.text("Step3. Select (afl-player-stats-2023")
     st.text("Ensure its the current stats of players")
 
 st.write("Click to find updated CSV files [link](https://www.wheeloratings.com/afl_stats.html)")
