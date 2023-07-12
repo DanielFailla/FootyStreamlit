@@ -38,7 +38,6 @@ uploaded_file = st.file_uploader("Choose a file")
 
 @st.cache_data 
 def read_data(uploaded_file):
-   uploaded_file = st.file_uploader("Choose a file")
    # Read CSV file
    data = pd.read_csv(uploaded_file)
    return data
