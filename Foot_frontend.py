@@ -94,9 +94,9 @@ x = (len(team1))
 z = (len(team2))
 ## GOALS: LOW = -1, NORMAL = -0.5, HIGH = 0, MAD = +0.5
 ## DISP: LOW = -4, NORMAL = -2, HIGH = 0, MAD = +2
-GRF_team1= pd.DataFrame({'Low': np.full(x,-1),'Normal':np.full(x,-0.5),'High':np.full(x,0),"Mad":np.full(x,0.5)})
+GRF_team1= pd.DataFrame({'Low': np.full(x,-1),'Normal':np.full(x,-0.5),'High':np.full(x,0),"Mad":np.full(x,0.2)})
 DRF_team1= pd.DataFrame({'Low': np.full(x,-4),'Normal':np.full(x,-2),'High':np.full(x,0),"Mad":np.full(x,2)})
-GRF_team2= pd.DataFrame({'Low': np.full(z,-1),'Normal':np.full(z,-0.5),'High':np.full(z,0),"Mad":np.full(z,0.5)})
+GRF_team2= pd.DataFrame({'Low': np.full(z,-1),'Normal':np.full(z,-0.5),'High':np.full(z,0),"Mad":np.full(z,0.2)})
 DRF_team2= pd.DataFrame({'Low': np.full(z,-4),'Normal':np.full(z,-2),'High':np.full(z,0),"Mad":np.full(z,2)})
 
 Team1_Risk = pd.DataFrame({'Player':np.array(team1['Player']),
