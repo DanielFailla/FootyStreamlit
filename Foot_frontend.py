@@ -20,7 +20,7 @@ st.header("🏉FOOTY BETTING🏉")
 st.divider()
 st.subheader('CSV DROPBOX 📦')
 
-with st.expander("Explination on Downloading CSV"):
+with st.expander("Explanation on Downloading CSV"):
     st.text("📱Iphone Instructions: ")
     st.text("Step1. Hold down on link -> tap 'open in new tab'")
     st.text("Step2. scorll down to'Download as CSV' -> Download")
@@ -85,7 +85,7 @@ Risk = st.select_slider(
     'Select your risk level',
     options=['Low', 'Normal', 'High', 'Mad'])
 
-with st.expander("Explination on Risk Scores"):
+with st.expander("Explanation on Risk Scores"):
     st.text("Goal Avg: Low= -1, Normal = -0.5, High = 0, Mad = +0.5")
     st.text("Disposal Avg: Low= -4, Normal = -2, High = 0, Mad = +2")
     st.write("⚠️Disclaimer⚠️")
