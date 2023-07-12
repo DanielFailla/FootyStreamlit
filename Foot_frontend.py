@@ -114,9 +114,9 @@ combines_word = f'{word_1}{word_2}'
 with tab1:
   
    st.subheader("Goal Averages")
-   st.bar_chart(data=Team1_Risk, x='Player', y='Goals_Avg', use_container_width=True)
+   st.bar_chart(data=Team1_Risk, x='Player', y='Adjusted Goals_Avg', use_container_width=True)
    st.subheader("Disposals Average")
-   st.bar_chart(data=Team1_Risk, x='Player', y='Disposals', use_container_width=True)
+   st.bar_chart(data=Team1_Risk, x='Player', y='Adjusted Disposals', use_container_width=True)
    st.divider()
    st.subheader('     📚 Bet Slip Recomendations 📚')
    st.subheader(combines_word)
@@ -145,9 +145,9 @@ with tab1:
 with tab2:
    
    st.subheader("Goal Averages")
-   st.bar_chart(data=Team2_Risk, x='Player', y='Goals_Avg', use_container_width=True)
+   st.bar_chart(data=Team2_Risk, x='Player', y='Adjusted Goals_Avg', use_container_width=True)
    st.subheader("Disposals Average")
-   st.bar_chart(data=Team2_Risk, x='Player', y='Disposals', use_container_width=True)
+   st.bar_chart(data=Team2_Risk, x='Player', y='Adjusted Disposals', use_container_width=True)
    st.subheader('     📚 Bet Slip Recomendations 📚')
    st.subheader(combines_word)
 
