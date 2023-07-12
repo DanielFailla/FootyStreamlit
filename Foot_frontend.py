@@ -21,9 +21,10 @@ st.header("🏉FOOTY BETTING🏉")
 st.divider()
 st.subheader('CSV DROPBOX 📦')
 with st.expander("Explination on Downloading CSV"):
-    st.text("Step1. Click the link and scorll down to (DOwnload CSV)")
+    st.text("Step1. Click the link and scorll down to (Download CSV)")
     st.text("Step2. Add CSV file to a location in computer easily accessible ")
-    st.text("Step3. Click browse files and add csv file. Ensure it is the current stats of players")
+    st.text("Step3. Click browse files and add csv file.")
+    st.text("Ensure its the current stats of players")
   
 st.write("Click to find updated CSV files [link](https://www.wheeloratings.com/afl_stats.html)")
 uploaded_file = st.file_uploader("Choose a file")
