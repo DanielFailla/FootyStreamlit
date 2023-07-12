@@ -2,7 +2,6 @@
 
 import streamlit as st
 import pandas as pd
-import plotly.express as px
 import numpy as np
 
 
@@ -20,13 +19,14 @@ st.header("🏉FOOTY BETTING🏉")
 
 st.divider()
 st.subheader('CSV DROPBOX 📦')
+
 with st.expander("Explination on Downloading CSV"):
     st.text("Step1. Click the link and scorll down to (Download CSV)")
     st.text("Step2. Add CSV file to a location in computer easily accessible ")
     st.text("Step3. Click browse files and add csv file.")
     st.text("Ensure its the current stats of players")
-  
-st.write("Click to find updated CSV file [link](https://www.wheeloratings.com/afl_stats.html)")
+
+st.write("Click to find updated CSV files [link](https://www.wheeloratings.com/afl_stats.html)")
 uploaded_file = st.file_uploader("Choose a file")
 file_name = uploaded_file.name
 # Read CSV file
@@ -106,10 +106,10 @@ combines_word = f'{word_1}{word_2}'
 
 with tab1:
   
-  # st.subheader("Goal Averages")
-  # st.bar_chart(data=Team1_Risk, x='Player', y='Goals_Avg', use_container_width=True)
-  # st.subheader("Disposals Average")
-   #st.bar_chart(data=Team1_Risk, x='Player', y='Disposals', use_container_width=True)
+   st.subheader("Goal Averages")
+   st.bar_chart(data=Team1_Risk, x='Player', y='Goals_Avg', use_container_width=True)
+   st.subheader("Disposals Average")
+   st.bar_chart(data=Team1_Risk, x='Player', y='Disposals', use_container_width=True)
    st.divider()
    st.subheader('     📚 Bet Slip Recomendations 📚')
    st.subheader(combines_word)
@@ -137,10 +137,10 @@ with tab1:
 
 with tab2:
    
-  # st.subheader("Goal Averages")
-   #st.bar_chart(data=Team2_Risk, x='Player', y='Goals_Avg', use_container_width=True)
-   #st.subheader("Disposals Average")
-  # st.bar_chart(data=Team2_Risk, x='Player', y='Disposals', use_container_width=True)
+   st.subheader("Goal Averages")
+   st.bar_chart(data=Team2_Risk, x='Player', y='Goals_Avg', use_container_width=True)
+   st.subheader("Disposals Average")
+   st.bar_chart(data=Team2_Risk, x='Player', y='Disposals', use_container_width=True)
    st.subheader('     📚 Bet Slip Recomendations 📚')
    st.subheader(combines_word)
 
