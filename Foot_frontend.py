@@ -26,7 +26,7 @@ with st.expander("Explination on Downloading CSV"):
     st.text("Step3. Click browse files and add csv file.")
     st.text("Ensure its the current stats of players")
   
-st.write("Click to find updated CSV files [link](https://www.wheeloratings.com/afl_stats.html)")
+st.write("Click to find updated CSV file [link](https://www.wheeloratings.com/afl_stats.html)")
 uploaded_file = st.file_uploader("Choose a file")
 file_name = uploaded_file.name
 # Read CSV file
