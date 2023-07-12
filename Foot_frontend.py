@@ -4,12 +4,12 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-
+@st.cache_data
 def Team1_2_desposals_range(Team1_Risk,lower_lim,upper_lim):
     Dsp = Team1_Risk[(Team1_Risk['Adjusted Disposals'] >= lower_lim) & (Team1_Risk['Adjusted Disposals'] < upper_lim)].sort_values('Adjusted Disposals')
     tabel = Dsp[['Player', 'Adjusted Disposals']]
     st.write(tabel)
-
+@st.cache_data
 def Team1_2_goals_range(Team1_Risk,lower_lim,upper_lim):
     Dsp = Team1_Risk[(Team1_Risk['Adjusted Goals_Avg'] >= lower_lim) & (Team1_Risk['Adjusted Goals_Avg'] < upper_lim)].sort_values('Adjusted Goals_Avg')
     tabel = Dsp[['Player', 'Adjusted Goals_Avg']]
@@ -48,6 +48,7 @@ sorted_data = data.sort_values(by='Team', ascending=True)
 #t.write(sorted_data)
 
 ## Input string e.g "Collingwood"
+@st.cache_data
 def sort_team(x):
     y = sorted_data[sorted_data['Team'] == x]
     return y
