@@ -8,7 +8,7 @@ import numpy as np
 def Team1_2_desposals_range(Team1_Risk,lower_lim,upper_lim):
     Dsp = Team1_Risk[(Team1_Risk['Adjusted Disposals'] >= lower_lim) & (Team1_Risk['Adjusted Disposals'] < upper_lim)].sort_values('Adjusted Disposals')
     tabel = Dsp[['Player', 'Adjusted Disposals']]
-    tabel['Disposals']= Team1_Risk['Disposals']
+    tabel['Disposals']= np.array(team1['Disposals'])
     st.write(tabel)
 
 def Team1_2_goals_range(Team1_Risk,lower_lim,upper_lim):
