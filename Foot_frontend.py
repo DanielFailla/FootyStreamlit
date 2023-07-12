@@ -31,7 +31,6 @@ with st.expander("Explination on Downloading CSV"):
     st.text("Step1. Click the link and scorll down to (Download CSV)")
     st.text("Step2. Add CSV file to a location in computer easily accessible ")
     st.text("Step3. Click browse files and add csv file.")
-    st.text("Ensure its the current stats of players")
     st.text("Ensure its the current week stats of the players")
 
 st.write("Click to find updated CSV files [link](https://www.wheeloratings.com/afl_stats.html)")
