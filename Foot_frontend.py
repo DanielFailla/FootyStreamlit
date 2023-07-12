@@ -100,12 +100,12 @@ GRF_team2= pd.DataFrame({'Low': np.full(z,-1),'Normal':np.full(z,-0.5),'High':np
 DRF_team2= pd.DataFrame({'Low': np.full(z,-4),'Normal':np.full(z,-2),'High':np.full(z,0),"Mad":np.full(z,2)})
 
 Team1_Risk = pd.DataFrame({'Player':np.array(team1['Player']),
-                           'Goals_Avg':np.array(team1['Goals_Avg'])+np.array(GRF_team1[Risk]),
-                            'Disposals':np.array(team1['Disposals'])+np.array(DRF_team1[Risk])})
+                           'Adjusted Goals_Avg':np.array(team1['Goals_Avg'])+np.array(GRF_team1[Risk]),
+                            'Adjusted Disposals':np.array(team1['Disposals'])+np.array(DRF_team1[Risk])})
 
 Team2_Risk = pd.DataFrame({'Player':np.array(team2['Player']),
-                           'Goals_Avg':np.array(team2['Goals_Avg'])+np.array(GRF_team2[Risk]),
-                            'Disposals':np.array(team2['Disposals'])+np.array(DRF_team2[Risk])})
+                           'Adjusted Goals_Avg':np.array(team2['Goals_Avg'])+np.array(GRF_team2[Risk]),
+                            'Adjusted Disposals':np.array(team2['Disposals'])+np.array(DRF_team2[Risk])})
 
 word_1 = "Risk Selection: "
 word_2 = Risk
@@ -166,7 +166,6 @@ with tab2:
       Team1_2_goals_range(Team2_Risk,1,10)
       st.subheader("2 or more goals")
       Team1_2_goals_range(Team2_Risk,2,10)
-
 
 
 
