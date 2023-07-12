@@ -2,7 +2,7 @@
 
 import streamlit as st
 import pandas as pd
-#import plotly.express as px
+import plotly.express as px
 import numpy as np
 
 
@@ -24,7 +24,7 @@ st.write("Click to find updated CSV files [link](https://www.wheeloratings.com/a
 uploaded_file = st.file_uploader("Choose a file")
 file_name = uploaded_file.name
 # Read CSV file
-data = pd.read_csv(file_name)
+data = pd.read_csv(uploaded_file)
 
 sorted_data = data.sort_values(by='Team', ascending=True)
 # Display the contents of the DataFrame
@@ -101,9 +101,9 @@ combines_word = f'{word_1}{word_2}'
 with tab1:
   
    st.subheader("Goal Averages")
-   #st.bar_chart(data=Team1_Risk, x='Player', y='Goals_Avg', use_container_width=True)
+   st.bar_chart(data=Team1_Risk, x='Player', y='Goals_Avg', use_container_width=True)
    st.subheader("Disposals Average")
-   #st.bar_chart(data=Team1_Risk, x='Player', y='Disposals', use_container_width=True)
+   st.bar_chart(data=Team1_Risk, x='Player', y='Disposals', use_container_width=True)
    st.divider()
    st.subheader('     📚 Bet Slip Recomendations 📚')
    st.subheader(combines_word)
@@ -132,9 +132,9 @@ with tab1:
 with tab2:
    
    st.subheader("Goal Averages")
-   #st.bar_chart(data=Team2_Risk, x='Player', y='Goals_Avg', use_container_width=True)
+   st.bar_chart(data=Team2_Risk, x='Player', y='Goals_Avg', use_container_width=True)
    st.subheader("Disposals Average")
-   #st.bar_chart(data=Team2_Risk, x='Player', y='Disposals', use_container_width=True)
+   st.bar_chart(data=Team2_Risk, x='Player', y='Disposals', use_container_width=True)
    st.subheader('     📚 Bet Slip Recomendations 📚')
    st.subheader(combines_word)
 
