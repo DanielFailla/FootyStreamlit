@@ -6,13 +6,13 @@ import numpy as np
 
 
 def Team1_2_desposals_range(Team1_Risk,lower_lim,upper_lim):
-    Dsp = Team1_Risk[(Team1_Risk['Disposals'] >= lower_lim) & (Team1_Risk['Disposals'] < upper_lim)].sort_values('Disposals')
-    tabel = Dsp[['Player', 'Disposals']]
+    Dsp = Team1_Risk[(Team1_Risk['Adjusted Disposals'] >= lower_lim) & (Team1_Risk['Adjusted Disposals'] < upper_lim)].sort_values('Adjusted Disposals')
+    tabel = Dsp[['Player', 'Adjusted Disposals']]
     st.write(tabel)
 
 def Team1_2_goals_range(Team1_Risk,lower_lim,upper_lim):
-    Dsp = Team1_Risk[(Team1_Risk['Goals_Avg'] >= lower_lim) & (Team1_Risk['Goals_Avg'] < upper_lim)].sort_values('Goals_Avg')
-    tabel = Dsp[['Player', 'Goals_Avg']]
+    Dsp = Team1_Risk[(Team1_Risk['Adjusted Goals_Avg'] >= lower_lim) & (Team1_Risk['Adjusted Goals_Avg'] < upper_lim)].sort_values('Adjusted Goals_Avg')
+    tabel = Dsp[['Player', 'Adjusted Goals_Avg']]
     st.write(tabel)
 
 st.header("🏉FOOTY BETTING🏉")
