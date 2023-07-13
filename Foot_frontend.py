@@ -119,14 +119,14 @@ def do_task(uploaded_file):
 
     with tab1:
     
-    st.subheader("Goal Averages")
-    st.bar_chart(data=Team1_Risk, x='Player', y='Adjusted Goals_Avg', use_container_width=True)
-    st.subheader("Disposals Average")
-    st.bar_chart(data=Team1_Risk, x='Player', y='Adjusted Disposals', use_container_width=True)
-    st.divider()
-    st.subheader('     📚 Bet Slip Recomendations 📚')
-    st.subheader(combines_word)
-    col3, col4 = st.columns(2)
+        st.subheader("Goal Averages")
+        st.bar_chart(data=Team1_Risk, x='Player', y='Adjusted Goals_Avg', use_container_width=True)
+        st.subheader("Disposals Average")
+        st.bar_chart(data=Team1_Risk, x='Player', y='Adjusted Disposals', use_container_width=True)
+        st.divider()
+        st.subheader('     📚 Bet Slip Recomendations 📚')
+        st.subheader(combines_word)
+        col3, col4 = st.columns(2)
 
     with col3:
         st.subheader("15 or more disposals")
@@ -150,14 +150,14 @@ def do_task(uploaded_file):
 
     with tab2:
     
-    st.subheader("Goal Averages")
-    st.bar_chart(data=Team2_Risk, x='Player', y='Adjusted Goals_Avg', use_container_width=True)
-    st.subheader("Disposals Average")
-    st.bar_chart(data=Team2_Risk, x='Player', y='Adjusted Disposals', use_container_width=True)
-    st.subheader('     📚 Bet Slip Recomendations 📚')
-    st.subheader(combines_word)
-
-    col5, col6 = st.columns(2)
+        st.subheader("Goal Averages")
+        st.bar_chart(data=Team2_Risk, x='Player', y='Adjusted Goals_Avg', use_container_width=True)
+        st.subheader("Disposals Average")
+        st.bar_chart(data=Team2_Risk, x='Player', y='Adjusted Disposals', use_container_width=True)
+        st.subheader('     📚 Bet Slip Recomendations 📚')
+        st.subheader(combines_word)
+    
+        col5, col6 = st.columns(2)
 
     with col5:
         st.subheader("15 or more disposals")
