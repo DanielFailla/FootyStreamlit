@@ -40,6 +40,7 @@ uploaded_file = st.file_uploader("Choose a file")
 if uploaded_file is None:
    st.write('waiting for file...')
 else:
+   st.write('Collecting data')
 
 
 def read_data(uploaded_file):
