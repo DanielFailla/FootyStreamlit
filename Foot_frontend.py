@@ -37,6 +37,10 @@ with st.expander("Explanation on Downloading CSV"):
 st.write("Click to find updated CSV files [link](https://www.wheeloratings.com/afl_stats.html)")
 uploaded_file = st.file_uploader("Choose a file")
 
+if uploaded_file is None:
+   st.write('waiting for file...')
+else:
+
 
 def read_data(uploaded_file):
    # Read CSV file
