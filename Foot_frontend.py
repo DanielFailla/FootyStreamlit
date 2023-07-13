@@ -36,7 +36,7 @@ with st.expander("Explanation on Downloading CSV"):
 st.write("Click to find updated CSV files [link](https://www.wheeloratings.com/afl_stats.html)")
 uploaded_file = st.file_uploader("Choose a file")
 
-@st.cache_data
+@st.cache_data(experimental_allow_widgets=True)
 def do_task(uploaded_file):
    
     @st.cache_data 
