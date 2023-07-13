@@ -68,23 +68,23 @@ def do_task(uploaded_file):
     col1, col2 = st.columns(2)
 
     with col1:
-    st.subheader(AFL_selection[0])
-    team1 = sort_team(AFL_selection[0])
-    st.write(team1[['Player', 'Goals_Avg', 'Disposals']])
+        st.subheader(AFL_selection[0])
+        team1 = sort_team(AFL_selection[0])
+        st.write(team1[['Player', 'Goals_Avg', 'Disposals']])
 
 
 
     with col2:
-    st.subheader(AFL_selection[1])
-    team2 = sort_team(AFL_selection[1])
-    st.write(team2[['Player', 'Goals_Avg', 'Disposals']])
-
-    st.divider()
-    ##RISK SLIDER
-    st.subheader('Choose Risk Level ↕️')
-    Risk = st.select_slider(
-        'Select your risk level',
-        options=['Low', 'Normal', 'High', 'Mad'])
+        st.subheader(AFL_selection[1])
+        team2 = sort_team(AFL_selection[1])
+        st.write(team2[['Player', 'Goals_Avg', 'Disposals']])
+    
+        st.divider()
+        ##RISK SLIDER
+        st.subheader('Choose Risk Level ↕️')
+        Risk = st.select_slider(
+            'Select your risk level',
+            options=['Low', 'Normal', 'High', 'Mad'])
 
     with st.expander("Explanation on Risk Scores"):
         st.text("Goal Avg: Low= -1, Normal = -0.5, High = 0, Mad = +0.5")
